@@ -1,11 +1,11 @@
-//
+
 var checkDecks = function(element){
 	var currentI = element.getAttribute('i');
 	var currentJ = element.getAttribute('j');
 	var currentClass = element.getAttribute('class');
 	var decks = document.getElementsByClassName(currentClass);
 	for (var i = 0; i < decks.length; i++){
-		//console.log("i="+decks.item(i).getAttribute('i')+"|| j="+decks.item(i).getAttribute('j'))
+		console.log("i="+decks.item(i).getAttribute('i')+"|| j="+decks.item(i).getAttribute('j')+"class="+decks.item(i).className)
 	}
 }
 /*Ответный огонь*/
@@ -13,6 +13,7 @@ var fireReturn = function(){
 	var i = parseInt(Math.random() * 10);
 	var j = parseInt(Math.random() * 10);
 	var z = document.getElementById(i+""+j);
+	checkDecks(z);
 	console.log('computer shooting')
 	if (playerMap[i][j]=='s1' || playerMap[i][j]=='s2' || playerMap[i][j]=='s3' || playerMap[i][j]=='s4'){
 		z.className = 'dmg';

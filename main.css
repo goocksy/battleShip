@@ -1,0 +1,51 @@
+  div.player_field { 
+      width: 470px;
+      height: 470px;
+      float: left;
+      border: 1px solid black;
+    }
+
+    div.enemy_field { 
+      width: 470px;
+      height: 470px;
+      float: left;
+      border: 1px solid black;
+      margin-left: 100px;
+    }
+    div{
+      width:45px;
+      height:45px;
+      border: 1px solid black;
+      float: left;
+    }
+    div.w{
+      background-image: url(imgs/369197.png);
+    }
+
+    div.s{
+      background-color: gray;
+    }
+
+    div.z{
+      background-image: url(imgs/369197.png);
+    }
+    div.dmg{
+        background-color: red;
+    }
+    div.s1,div.s2,div.s3,div.s4{
+        background-color: gray;
+        background-image: url(imgs/369220.png);   
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.s1e,div.s2e,div.s3e,div.s4e{
+        background-image: url(imgs/369197.png);   
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    div.miss{
+        background-color: white;
+        background-image: url(imgs/369208.png);   
+        background-repeat: no-repeat;
+        background-position: center;
+    }
