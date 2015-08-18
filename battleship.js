@@ -21,10 +21,11 @@ var fireReturn = function(){
 		fireReturn();
 	}else if(playerMap[i][j]=='miss'){
 		fireReturn()
-	}else{
-		playerMap[i][j]='miss';
+	}else if (playerMap[i][j]=='dmg') {fireReturn();}	
+	else{
 		z.className='miss';
-	}	
+		playerMap[i][j]='miss';
+	}
 	console.log("PCScore="+enemyScore);
 }
 
